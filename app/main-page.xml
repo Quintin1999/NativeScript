@@ -1,0 +1,31 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+    <ActionBar title="My App" icon="" />
+    <StackLayout class="p-4">
+        <Label text="Please tap me" class="text-3xl text-center" />
+        <Button text="TAP" tap="{{ onTap }}" class="-primary" />
+        <Label text="{{ message }}" class="text-lg text-center text-gray-400" textWrap="true" />
+
+<DatePicker
+  year="1884"
+  month="1"
+  day="1"
+  loaded="onDatePickerLoaded"
+  margin="0 0 10 0" 
+/>
+
+<Slider
+  minValue="0"
+  maxValue="100"
+  loaded="onSliderLoaded"
+  margin="10 0" 
+/>
+
+<TextField
+  hint="Enter text if Dare"
+  color="black"
+  backgroundColor="darkgray"
+  margin="10 0" 
+/>
+
+    </StackLayout>
+</Page>
